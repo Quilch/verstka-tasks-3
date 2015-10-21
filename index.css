@@ -1,0 +1,21 @@
+tr:nth-child(2n){
+    background-color: #a6a4a4;
+}
+table {
+    overflow: hidden;
+}
+tr:hover {
+    background-color: #003aff;
+}
+td {
+    position: relative;
+}
+td:hover::before {
+    content: "";
+    position: absolute;
+    background-color: #003aff;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+}
